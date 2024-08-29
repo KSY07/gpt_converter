@@ -4,7 +4,7 @@ import httpx
 from openai import OpenAI
 import os
 
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 app = FastAPI()
 client = OpenAI(api_key=OPENAI_API_KEY)
 
