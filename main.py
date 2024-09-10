@@ -12,8 +12,7 @@ app = FastAPI()
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 origins = [
-    "http://localhost:3000",
-    "http://www.gonggansongil.com"
+    "*"
 ]
 
 app.add_middleware(
