@@ -5,8 +5,6 @@ import httpx
 from openai import OpenAI
 import os
 
-from starlette.middleware.cors import CORSMiddleware
-
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 app = FastAPI()
 client = OpenAI(api_key=OPENAI_API_KEY)
